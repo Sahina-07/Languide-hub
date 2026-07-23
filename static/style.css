@@ -1,0 +1,19 @@
+#banner{
+    width: 500px;
+    height: 260px;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+.Main-banner{
+display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 20px;
+
+  background-color: #f97a7a;
+  padding: 40px;
+  border-radius: 8px;
+}
+#main-text{
+    margin-left: 100px;
+}
