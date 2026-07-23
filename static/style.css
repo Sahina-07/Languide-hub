@@ -17,3 +17,268 @@ display: flex;
 #main-text{
     margin-left: 100px;
 }
+
+#roadmap{
+    text-align: center;
+}
+/*CARD CONTAINERS*/
+/*  Hiragana Card-containers*/
+#hiragana-card{
+    position: relative;
+    width: 150px;
+    padding: 40px 20px 30px 20px;
+    margin-top: 40px;
+    background-color: rgb(244, 183, 183);
+    border: 1px solid #333333;
+    border-radius: 12px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+/* Styling for the overlapping circle badge */
+.step-1{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Centers the circle perfectly on the top line */
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* Typography styling */
+.hiragana-title{
+     margin: 0 0 15px 0;
+  font-size: 20px;
+  color: #111111;
+}
+
+.hiragana-text{   
+  margin: 0;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
+
+}
+/*katakana-card container*/
+#katakana-card{
+    position: relative;
+    width: 150px;
+    padding: 40px 20px 30px 20px;
+    margin-top: 40px;
+    background-color: rgb(244, 183, 183);
+    border: 1px solid #333333;
+    border-radius: 12px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.step-2{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Centers the circle perfectly on the top line */
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.katakana-title{
+     margin: 0 0 15px 0;
+  font-size: 20px;
+  color: #111111;
+}
+.katakana-text{   
+  margin: 0;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
+
+}
+/* Kanji-card container*/
+#basic-kanji-card{
+    position: relative;
+    width: 150px;
+    padding: 40px 20px 30px 20px;
+    margin-top: 40px;
+    background-color: rgb(244, 183, 183);
+    border: 1px solid #333333;
+    border-radius: 12px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.step-3{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Centers the circle perfectly on the top line */
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.kanji-title{
+     margin: 0 0 15px 0;
+  font-size: 20px;
+  color: #111111;
+}
+.kanji-text{   
+  margin: 0;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
+
+}
+/* vocabulary-card container*/
+#vocabulary-card{
+    position: relative;
+    width: 150px;
+    padding: 40px 20px 30px 20px;
+    margin-top: 40px;
+    background-color: rgb(244, 183, 183);
+    border: 1px solid #333333;
+    border-radius: 12px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.step-4{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Centers the circle perfectly on the top line */
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.vocabulary-title{
+     margin: 0 0 15px 0;
+  font-size: 20px;
+  color: #111111;
+}
+.vocabulary-text{   
+  margin: 0;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
+
+}
+/* grammar-card container*/
+#grammar-card{
+    position: relative;
+    width: 150px;
+    padding: 40px 20px 30px 20px;
+    margin-top: 40px;
+    background-color: rgb(244, 183, 183);
+    border: 1px solid #333333;
+    border-radius: 12px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.step-5{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Centers the circle perfectly on the top line */
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.grammar-title{
+     margin: 0 0 15px 0;
+  font-size: 20px;
+  color: #111111;
+}
+.grammar-text{   
+  margin: 0;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
+
+}
+/* Practice-card container*/
+#practice-card{
+    position: relative;
+    width: 150px;
+    padding: 40px 20px 30px 20px;
+    margin-top: 40px;
+    background-color: rgb(244, 183, 183);
+    border: 1px solid #333333;
+    border-radius: 12px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.step-6{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Centers the circle perfectly on the top line */
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.practice-title{
+     margin: 0 0 15px 0;
+  font-size: 20px;
+  color: #111111;
+}
+.practice-text{   
+  margin: 0;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
+
+}
+
+#card-containers{
+    display: flex;
+    align-items: center;      /* Vertically centers the arrow with the cards */
+    justify-content: center;
+    gap: 20px;
+}
+.arrow {
+    margin-top: 4%;
+  font-size: 2rem;
+}
