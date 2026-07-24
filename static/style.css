@@ -282,3 +282,22 @@ display: flex;
     margin-top: 4%;
   font-size: 2rem;
 }
+#recommended-resources{
+  text-align: center;
+}
+#rimage{
+  width: 250px;
+  height: 160px;
+  border-radius: 3%;
+}
+#resources{
+  display: flex;
+  padding-left: 2%;
+  align-items: center;
+}
+#youtube-,
+#websites-,
+#apps-,
+#books-{
+  margin: 25px;
+}
