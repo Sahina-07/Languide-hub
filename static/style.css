@@ -282,6 +282,7 @@ display: flex;
     margin-top: 4%;
   font-size: 2rem;
 }
+/* Recomanded */
 #recommended-resources{
   text-align: center;
 }
@@ -300,4 +301,8 @@ display: flex;
 #apps-,
 #books-{
   margin: 25px;
+}
+/* tips */
+.tips{
+  text-align: center;
 }
