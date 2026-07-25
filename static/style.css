@@ -3,16 +3,17 @@
     height: 260px;
     margin-top: 40px;
     margin-right: 100px;
+    margin-top: 0%;
 }
 .Main-banner{
 display: flex;
   align-items: center; 
   justify-content: space-between; 
   gap: 20px;
-
-  background-color: #f97a7a;
   padding: 40px;
-  border-radius: 8px;
+  background-color: #f97a7a;
+  
+  border-radius: 0px;
 }
 #main-text{
     margin-left: 100px;
@@ -21,6 +22,8 @@ display: flex;
 #roadmap{
     text-align: center;
 }
+
+
 /*CARD CONTAINERS*/
 /*  Hiragana Card-containers*/
 #hiragana-card{
@@ -276,7 +279,8 @@ display: flex;
     display: flex;
     align-items: center;      /* Vertically centers the arrow with the cards */
     justify-content: center;
-    gap: 20px;
+    gap: 2px;
+    margin: 1%;
 }
 .arrow {
     margin-top: 4%;
@@ -306,3 +310,43 @@ display: flex;
 .tips{
   text-align: center;
 }
+#tip-img{
+  width: 350px;
+  height: 150px;
+  border-radius: 3%;
+  
+}
+#tips-banner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  background-color: #f97a7a;
+  padding: 30px;
+  border-radius: 8px;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+.tips-text{
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column; /* Keeps the list vertical */
+  gap: 15px;            /* Adds 15px of space between each li */
+}
+#footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+  background-color: #a8a7a7;
+  margin-top: 5%;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
