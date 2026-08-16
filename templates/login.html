@@ -1,24 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login to Languide-hub</title>
-    <link rel="stylesheet" href="/static/login.css">
-</head>
-<body>
-    <div id="log-in">  
-        <div id="login-img">
-            <img src="/static/image/login.png" alt="">
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com" />
+    <link rel="stylesheet" href="/static/login.css" />
+  </head>
+  <body>
+    <div id="log-in">
+      <div class="loginimg-con">
+        <img
+          src="/static/image/login.png"
+          alt="Welcome Image"
+          class="login-img"
+        />
+      </div>
+      <!-- Right Side: Form Container -->
+      <div class="login-card">
+        <h2>Welcome back</h2>
+        <p class="subtitle">Login to continue</p>
+
+        <form class="login-form">
+          <!-- Notice we removed the text labels and put them inside the placeholders -->
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+
+          <a href="#" class="forgot-link">Forgot Password</a>
+
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <div class="divider">
+          <span>or</span>
         </div>
-        <div id="login-form">
-            <form action="">
-                <h4>Welcome Back</h4>
-                <p>Login to continue</p>
-                <input type="text">
-                
-            </form>
+
+        <!-- Social Icons Containers -->
+        <div class="social-login">
+          <a href="#" class="social-icon google"
+            ><i class="fa-brands fa-google"></i
+          ></a>
+          <a href="#" class="social-icon facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" class="social-icon instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </div>
+
+        <p class="signup-text">
+          Don’t have an account? <a href="#">Create account</a>
+        </p>
+      </div>
     </div>
-</body>
+  </body>
 </html>

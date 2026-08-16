@@ -1,3 +1,179 @@
-body{
+*{
     margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+body{
+    background-color: #fcefed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#log-in{
+    display: flex;
+     align-items: center; 
+     /* outline:1px solid;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);  */
+    
+}
+
+.loginimg-con{
+    perspective: 1000px;
+    display: inline-block;
+    padding: 40px;
+}
+.login-img{
+    padding: 5px;
+    width: 500px;
+    height: auto;
+    transform: rotateX(10deg) rotateY(35deg);
+    transform-origin: left center; 
+}
+
+/* Center all elements inside your main card wrapper */
+.login-card {
+  width: 380px;
+  background: linear-gradient(to bottom, #FFBEED, #ffffff); /* Smooth pink-to-white gradient */
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 28px;
+  padding: 40px 30px;
+  box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.4);
+  text-align: center; /* Centers all inner text elements */
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 40px auto; /* Centers the whole card on the page screen */
+  box-sizing: border-box;
+}
+
+/* Typography styles */
+.login-card h2 {
+  font-size: 24px;
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 25px 0;
+}
+
+/* Form inputs & arrangement */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  width: 100%;
+  height: 48px;
+  background: #ffffff;
+  border: none;
+  border-radius: 24px; /* Gives the input boxes the round pill shape */
+  margin-bottom: 16px;
+  padding: 0 20px;
+  font-size: 15px;
+  text-align: center; /* Centers the placeholder text inside the input */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Forgot Password link styling */
+.forgot-link {
+  font-size: 13px;
+  color: #2b5fe6;
+  text-decoration: none;
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
+
+/* Coral Login Button styling */
+.login-btn {
+  width: 55%;
+  height: 46px;
+  background: #f8938a; /* Soft coral color match */
+  color: #000000;
+  border: none;
+  border-radius: 23px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0 auto 25px auto;
+  box-shadow: 0 5px 12px rgba(248, 147, 138, 0.3);
+}
+
+/* "or" Horizontal divider lines */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #444;
+  font-size: 14px;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #999;
+}
+.divider:not(:empty)::before { margin-right: .7em; }
+.divider:not(:empty)::after { margin-left: .7em; }
+
+/* Social Icons styling layout */
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Color codes for individual brand icons */
+.social-icon.google i {
+  background: linear-gradient(45deg, #ea4335, #fbbc05, #34a853, #4285f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-icon.facebook i {
+  color: #1877f2;
+}
+
+.social-icon.instagram i {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Footer bottom link text */
+.signup-text {
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+}
+
+.signup-text a {
+  color: #2b5fe6;
+  text-decoration: none;
+}
+
+
+
