@@ -1,9 +1,62 @@
+/* Container holding the text input and button together */
+.classic-search-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #767676; /* Standard, subtle border outline */
+  background-color: #fff;
+}
+
+/* The text input area */
+.classic-input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: none;
+  outline: none;
+  color: #333;
+}
+
+/* Light gray placeholder text styling */
+.classic-input::placeholder {
+  color: #757575;
+}
+
+/* The search button on the right side */
+.classic-btn {
+  padding: 8px 14px;
+  font-size: 16px;
+  background-color: #fcfcfc;
+  color: #000;
+  border: none;
+  border-left: 1px solid #767676; /* Separates button from text field */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Subtle background color change when hovering over the button */
+.classic-btn:hover {
+  background-color: #f0f0f0;
+}
+
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
 #banner{
     width: 500px;
     height: 260px;
     margin-top: 40px;
     margin-right: 100px;
     margin-top: 0%;
+    border-radius: 8px;
 }
 .Main-banner{
 display: flex;

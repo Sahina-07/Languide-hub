@@ -1,58 +1,92 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login to Languide-hub</title>
-    <!-- Font Awesome for Social Media Icons -->
-    <link rel="stylesheet" href="https://cloudflare.com" />
-    <link rel="stylesheet" href="/static/login.css" />
-  </head>
-  <body>
-    <div id="log-in">
-      <div class="loginimg-con">
-        <img
-          src="/static/image/login.png"
-          alt="Welcome Image"
-          class="login-img"
-        />
-      </div>
-      <!-- Right Side: Form Container -->
-      <div class="login-card">
-        <h2>Welcome back</h2>
-        <p class="subtitle">Login to continue</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <form class="login-form">
-          <!-- Notice we removed the text labels and put them inside the placeholders -->
-          <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required />
+  <title>Login to Languide-hub</title>
 
-          <a href="#" class="forgot-link">Forgot Password</a>
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
 
-          <button type="submit" class="login-btn">Login</button>
-        </form>
+  <link rel="stylesheet" href="/static/login.css" />
+</head>
 
-        <div class="divider">
-          <span>or</span>
-        </div>
+<body>
 
-        <!-- Social Icons Containers -->
-        <div class="social-login">
-          <a href="#" class="social-icon google"
-            ><i class="fa-brands fa-google"></i
-          ></a>
-          <a href="#" class="social-icon facebook"
-            ><i class="fa-brands fa-facebook-f"></i
-          ></a>
-          <a href="#" class="social-icon instagram"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-        </div>
+  <main id="log-in">
 
-        <p class="signup-text">
-          Don’t have an account? <a href="#">Create account</a>
-        </p>
-      </div>
+    <!-- Left image -->
+    <div class="loginimg-con">
+      <img
+        src="/static/image/login.png"
+        alt="Japanese scenery"
+        class="login-img"
+      />
     </div>
-  </body>
+
+    <!-- Login card -->
+    <section class="login-card">
+
+      <h2>Welcome Back</h2>
+
+      <p class="subtitle">Login to continue</p>
+
+      <form class="login-form">
+
+        <input
+          type="email"
+          placeholder="Email"
+          required
+        />
+
+        <input
+          type="password"
+          placeholder="Password"
+          required
+        />
+
+        <a href="#" class="forgot-link">
+          Forgot Password
+        </a>
+
+        <button type="submit" class="login-btn">
+          Login
+        </button>
+
+      </form>
+
+      <div class="divider">
+        <span>or</span>
+      </div>
+
+      <div class="social-login">
+
+        <a href="#" class="social-icon google" aria-label="Google">
+          <i class="fa-brands fa-google"></i>
+        </a>
+
+        <a href="#" class="social-icon facebook" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#" class="social-icon instagram" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+      </div>
+
+      <p class="signup-text">
+        Don’t have an account?
+        <a href="#">Create account</a>
+      </p>
+
+    </section>
+
+  </main>
+
+</body>
 </html>
