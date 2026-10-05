@@ -1,0 +1,30 @@
+/* ======================================================================
+                          header
+=========================================================================*/
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-color: #ffffff;
+}
+#navbar nav{
+    display: plex;
+    gap: 24px;
+}
+#header nav{
+    display: flex;
+    gap: 60px;
+}
+#header nav a{
+    text-decoration: none;
+}
+#header nav a:hover{
+    color: #0066cc;
+}
+#header p {
+  margin: 0;                      /* Removes default browser paragraph spacing */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
