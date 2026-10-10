@@ -28,3 +28,28 @@
   font-weight: bold;
   font-size: 1.2rem;
 }
+
+/* ============================================================================
+                            Table-Hiragana
+============================================================================ */
+
+#block{
+    display: flex;
+    justify-content: space-around;
+}
+/* ==================================FOOTER========================================= */
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#quick-links{
+    display: flex;
+    flex-direction: column;
+}
+#copy-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
