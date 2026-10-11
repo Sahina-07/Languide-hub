@@ -36,6 +36,160 @@
     border: none;
     background: transparent;
 }
+/* ====================================
+                 HERO
+==================================== */
+/* Container Box */
+.banner-container {
+    background-color: #ffdce6; /* Light pink banner background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* Typography & Content Styles */
+.content-side {
+    max-width: 55%;
+    z-index: 2;
+}
+
+.back-btn {
+    background: #ffffff;
+    border: 1.5px solid #20b2aa;
+    color: #20b2aa;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #0b1a30;
+    font-size: 42px;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+p {
+    color: #2c4260;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Graphic Area Styling */
+.graphic-container {
+    position: relative;
+    width: 350px;
+    height: 180px;
+    align-self: flex-end; /* Locks graphics to the bottom edge */
+}
+
+/* The Sun */
+.sun {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(to bottom, #ff8da1, #ffaebb);
+    border-radius: 50%;
+    bottom: 10px;
+    left: 20px;
+    z-index: 0;
+}
+
+/* Mountain Teal Base Layer */
+.mountain-base {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #419b9b, #5cb0b0);
+    bottom: -10px;
+    z-index: 1;
+    /* Draws the sloped peak and base ridges */
+    clip-path: polygon(0% 100%, 15% 90%, 65% 25%, 72% 28%, 100% 100%);
+}
+
+/* Snow Cap Overlay */
+.mountain-snow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    bottom: -10px;
+    z-index: 2;
+    /* Clips the white peak layer and shapes the jagged bottom ridges of the snow */
+    clip-path: polygon(48% 46%, 65% 25%, 72% 28%, 79% 46%, 74% 43%, 68% 49%, 62% 43%, 55% 48%);
+}
+/* Container holding the background animation layers */
+.petals-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; /* Sits completely behind the content side text blocks */
+    pointer-events: none; /* Prevents background petals from blocking text selections */
+}
+
+/* Individual Petal Core Graphic Shape */
+.petal {
+    position: absolute;
+    background: linear-gradient(135deg, #ffaebb, #ffcad4);
+    opacity: 0.85;
+    /* Custom clip path structure forming a standard 5-point organic cherry petal shape */
+    clip-path: polygon(50% 0%, 80% 20%, 100% 50%, 80% 90%, 50% 100%, 20% 90%, 0% 50%, 20% 20%);
+    border-radius: 50% 50% 40% 40%;
+}
+
+/* Multi-Scale Petal Sizes */
+.size-sm { width: 10px; height: 14px; }
+.size-md { width: 14px; height: 20px; }
+.size-lg { width: 18px; height: 25px; }
+
+/* Dynamic Floating Speeds and Delays */
+.speed-slow   { animation: driftAndSway 12s linear infinite; }
+.speed-normal { animation: driftAndSway 9s  linear infinite; }
+.speed-fast   { animation: driftAndSway 6s  linear infinite; }
+
+/* Starting Placement Distributions across top area */
+.pos-1 { top: -20px; left: 15%; animation-delay: 0s; }
+.pos-2 { top: -20px; left: 35%; animation-delay: 2s; }
+.pos-3 { top: -20px; left: 55%; animation-delay: 0.5s; }
+.pos-4 { top: -20px; left: 75%; animation-delay: 4s; }
+.pos-5 { top: -20px; left: 90%; animation-delay: 1.5s; }
+
+/* Combined Downward Drift & Horizontal Sway Animation Keyframes */
+@keyframes driftAndSway {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.85;
+    }
+    50% {
+        /* Gently curves back and forth horizontally mid-flight */
+        transform: translateY(120px) translateX(60px) rotate(180deg);
+    }
+    90% {
+        opacity: 0.85;
+    }
+    100% {
+        /* Loops and exits frame bottom-right cleanly */
+        transform: translateY(260px) translateX(120px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
 /* ======================================================================
                           header
 =========================================================================*/
