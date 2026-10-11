@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hirgana Charecters</title>
     <link rel="stylesheet" href="/static/hiragana.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
 </head>
 
 <body>
     <div>
         <!--===================== Header section=================== -->
         <div id="header">
-            <div>
-                <p>LanguideHub</p>
+            <div class="brand-container">
+                <span class="text-navy">Languide</span><span class="text-pink">Hub</span>
             </div>
             <div id="navbar">
                 <nav>
@@ -24,11 +26,14 @@
                 </nav>
             </div>
             <div>
-                <form class="classic-search-box" action="/search" method="GET">
-                    <input type="search" class="classic-input" name="q" placeholder="Search..." required />
-                    <button type="submit" class="classic-btn">🔍</button>
+                <form action="">
+                    <div class="search">
+                        <span class="search-icon material-symbols-outlined">search</span>
+                        <input id="search-input" class="search-input" type="search" placeholder="Search...">
+                    </div>
                 </form>
             </div>
+
         </div>
         <!--======================== Hero section ===================== -->
         <div>
@@ -42,7 +47,7 @@
             <!-- ===============Hiragana table============== -->
             <div id="Hiragana-table"> <!--full tabel div-->
                 <div> <!--table 1 div-->
-                    <table cellpadding="20" border="1">
+                    <table class="hiragana-char" cellpadding="20" border="1">
                         <tr>
                             <th colspan="5">Hiragana Characters</th>
                         </tr>
@@ -125,7 +130,7 @@
                 <!-- Dakuten Hiragana  -->
                 <div><!--table 2 div-->
                     <h2>Dakuten</h2>
-                    <table border="1" cellpadding="20">
+                    <table class="hiragana-char" border="1" cellpadding="20">
                         <tr>
                             <td>が<br>ga</td>
                             <td>ぎ<br>gi</td>
