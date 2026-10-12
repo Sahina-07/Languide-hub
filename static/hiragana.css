@@ -238,6 +238,7 @@ p {
 
 
 /* ==================================FOOTER========================================= */
+
 #footer{
     display: flex;
     justify-content: space-evenly;
@@ -307,4 +308,61 @@ p {
     padding: 10px;
     border-radius: 10px;
     background-color: #FCE7F3;
+    
+}
+
+/* ==========================How to Learn====================== */
+#how-learn{
+    text-decoration: none;
+    border: solid #0D9488;
+    background-color: #d3f7ef;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.list1-title{
+    font-family: sans-serif;
+    color: #0b1a30;
+    margin-bottom: 20px;
+}
+.list1-text{
+    font-size: 16px;
+    color: #2e384d;
+    line-height: 26px;
+}
+.card-line{
+    border: 0;
+    height: 2px;
+    background-color: #0D9488;
+    margin: 15px 0;
+    width: 100%;
+}
+
+#hiraprect-btn{
+    border: 0;
+    background-color: #EC4899;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+}
+.how-list{
+    list-style-type: none;
+    margin: 0;
+}
+
+.numli{
+    margin-right: 20px;
+    border: 0;
+    background-color: #0D9488;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: white;
+}
+.how-list li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
