@@ -226,15 +226,17 @@ p {
                             Table-Hiragana
 ============================================================================ */
 
-#block{
+ #Hiragana-table{
     display: flex;
-    justify-content: space-between;
-}
+    justify-content: space-evenly;
+    margin: 50px
+ }
 
 .hiragana-char{
     padding: 5px;
     
 }
+
 
 
 /* ==================================FOOTER========================================= */
@@ -256,6 +258,11 @@ p {
     justify-content: center;
 }
 /* ============================Suggetion=================================== */
+#suggetion{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
 .list-title{
     font-family: sans-serif;
     color: #0b1a30;
@@ -365,4 +372,44 @@ p {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+}
+/* ===========Table================= */
+.hiragana-char{
+  border: solid #F9A8D4; 
+  border-radius: 10px;
+  border-spacing: 10px; /* Separates the cards */
+  width: 100%;
+  max-width: 600px;
+  font-family: sans-serif;
+}
+/* Header style styling */
+ .hiragana-char th{
+    font-size: 22px;
+    color: #0b1a30;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+ }
+/* Rounded card style for individual cells */
+.hiragana-char td{
+    background-color: #fffafc;
+    border: 1px solid #ffd5e0;
+    border-radius: 8px;
+    padding: 15px 5px;
+    text-align: center;
+    width: 20%;
+}
+/* Japanese Character layout */
+.hiragana-char .char{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0b1a30;
+    margin-bottom: 2px;
+}
+/* English */
+.hiragana-char .romanji{
+    display: block;
+    font-size: 22px;
+    color: #758294;
 }

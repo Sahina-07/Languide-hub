@@ -70,123 +70,128 @@
 
         <div id="block">
             <!-- ===============Hiragana table============== -->
-            <div id="Hiragana-table"> <!--full tabel div-->
+            <div id="Hiragana-table"> <!--full table div-->
                 <div> <!--table 1 div-->
-                    <table class="hiragana-char" cellpadding="20" border="1">
+                    <!-- Removed border and cellpadding to let CSS handle it cleanly -->
+                    <table class="hiragana-char">
                         <tr>
                             <th colspan="5">Hiragana Characters</th>
                         </tr>
                         <tr>
-                            <td>あ <br> a</td>
-                            <td>い <br>i</td>
-                            <td>う <br>u</td>
-                            <td>え <br>e</td>
-                            <td>お <br>o</td>
+                            <td><span class="char">あ</span><span class="romaji">a</span></td>
+                            <td><span class="char">い</span><span class="romaji">i</span></td>
+                            <td><span class="char">う</span><span class="romaji">u</span></td>
+                            <td><span class="char">え</span><span class="romaji">e</span></td>
+                            <td><span class="char">お</span><span class="romaji">o</span></td>
                         </tr>
                         <tr>
-                            <td>か <br>ka</td>
-                            <td>き <br>ki</td>
-                            <td>く <br>ku</td>
-                            <td>け <br>ke</td>
-                            <td>こ <br>ko</td>
+                            <td><span class="char">か</span><span class="romaji">ka</span></td>
+                            <td><span class="char">き</span><span class="romaji">ki</span></td>
+                            <td><span class="char">く</span><span class="romaji">ku</span></td>
+                            <td><span class="char">け</span><span class="romaji">ke</span></td>
+                            <td><span class="char">こ</span><span class="romaji">ko</span></td>
                         </tr>
                         <tr>
-                            <td>さ <br>sa</td>
-                            <td>し <br>shi</td>
-                            <td>す <br>su</td>
-                            <td>せ <br>se</td>
-                            <td>そ <br>so</td>
+                            <td><span class="char">さ</span><span class="romaji">sa</span></td>
+                            <td><span class="char">し</span><span class="romaji">shi</span></td>
+                            <td><span class="char">す</span><span class="romaji">su</span></td>
+                            <td><span class="char">せ</span><span class="romaji">se</span></td>
+                            <td><span class="char">そ</span><span class="romaji">so</span></td>
                         </tr>
                         <tr>
-                            <td>た<br>ta</td>
-                            <td>ち<br>chi</td>
-                            <td>つ<br>tsu</td>
-                            <td>て<br>te</td>
-                            <td>と<br>to</td>
+                            <td><span class="char">た</span><span class="romaji">ta</span></td>
+                            <td><span class="char">ち</span><span class="romaji">chi</span></td>
+                            <td><span class="char">つ</span><span class="romaji">tsu</span></td>
+                            <td><span class="char">て</span><span class="romaji">te</span></td>
+                            <td><span class="char">と</span><span class="romaji">to</span></td>
                         </tr>
                         <tr>
-                            <td>な<br>na</td>
-                            <td>に<br>ni</td>
-                            <td>ぬ<br>nu</td>
-                            <td>ね<br>ne</td>
-                            <td>の<br>no</td>
+                            <td><span class="char">な</span><span class="romaji">na</span></td>
+                            <td><span class="char">に</span><span class="romaji">ni</span></td>
+                            <td><span class="char">ぬ</span><span class="romaji">nu</span></td>
+                            <td><span class="char">ね</span><span class="romaji">ne</span></td>
+                            <td><span class="char">の</span><span class="romaji">no</span></td>
                         </tr>
                         <tr>
-                            <td>は<br>ha</td>
-                            <td>ひ<br>hi</td>
-                            <td>ふ<br>fu</td>
-                            <td>へ<br>he</td>
-                            <td>ほ<br>ho</td>
+                            <td><span class="char">は</span><span class="romaji">ha</span></td>
+                            <td><span class="char">ひ</span><span class="romaji">hi</span></td>
+                            <td><span class="char">ふ</span><span class="romaji">fu</span></td>
+                            <td><span class="char">へ</span><span class="romaji">he</span></td>
+                            <td><span class="char">ほ</span><span class="romaji">ho</span></td>
                         </tr>
                         <tr>
-                            <td>ま<br>ma</td>
-                            <td>み<br>mi</td>
-                            <td>む<br>mu</td>
-                            <td>め<br>me</td>
-                            <td>も<br>mo</td>
+                            <td><span class="char">ま</span><span class="romaji">ma</span></td>
+                            <td><span class="char">み</span><span class="romaji">mi</span></td>
+                            <td><span class="char">む</span><span class="romaji">mu</span></td>
+                            <td><span class="char">め</span><span class="romaji">me</span></td>
+                            <td><span class="char">も</span><span class="romaji">mo</span></td>
                         </tr>
                         <tr>
-                            <td>や<br>ya</td>
-                            <td></td>
-                            <td>ゆ<br>yu</td>
-                            <td></td>
-                            <td>よ<br>yo</td>
+                            <td><span class="char">や</span><span class="romaji">ya</span></td>
+                            <td class="empty-cell"></td>
+                            <td><span class="char">ゆ</span><span class="romaji">yu</span></td>
+                            <td class="empty-cell"></td>
+                            <td><span class="char">よ</span><span class="romaji">yo</span></td>
                         </tr>
                         <tr>
-                            <td>ら<br>ra</td>
-                            <td>り<br>ri</td>
-                            <td>る<br>ru</td>
-                            <td>れ<br>re</td>
-                            <td>ろ<br>ro</td>
-
+                            <td><span class="char">ら</span><span class="romaji">ra</span></td>
+                            <td><span class="char">り</span><span class="romaji">ri</span></td>
+                            <td><span class="char">る</span><span class="romaji">ru</span></td>
+                            <td><span class="char">れ</span><span class="romaji">re</span></td>
+                            <td><span class="char">ろ</span><span class="romaji">ro</span></td>
                         </tr>
                         <tr>
-                            <td>わ<br>wa</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>を<br>wo</td>
+                            <td><span class="char">わ</span><span class="romaji">wa</span></td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                            <td class="empty-cell"></td>
+                            <td><span class="char">を</span><span class="romaji">wo</span></td>
                         </tr>
                         <tr>
-                            <td>ん<br>n</td>
+                            <td><span class="char">ん</span><span class="romaji">n</span></td>
+                            <!-- Keeps alignment correct for the last row -->
+                            <td colspan="4" class="empty-cell"></td>
                         </tr>
                     </table>
                 </div> <!--table 1 div end-->
+
                 <!-- Dakuten Hiragana  -->
                 <div><!--table 2 div-->
-                    <h2>Dakuten</h2>
-                    <table class="hiragana-char" border="1" cellpadding="20">
+                    <table class="hiragana-char">
                         <tr>
-                            <td>が<br>ga</td>
-                            <td>ぎ<br>gi</td>
-                            <td>ぐ<br>gu</td>
-                            <td>げ<br>ge</td>
-                            <td>ご<br>go</td>
+                        <th colspan="5">Dakuten</th>
                         </tr>
                         <tr>
-                            <td>ざ<br>za</td>
-                            <td>じ<br>ji</td>
-                            <td>ず<br>zu</td>
-                            <td>ぜ<br>ze</td>
-                            <td>ぞ<br>zo</td>
+                            <td><span class="char">が</span><span class="romaji">ga</span></td>
+                            <td><span class="char">ぎ</span><span class="romaji">gi</span></td>
+                            <td><span class="char">ぐ</span><span class="romaji">gu</span></td>
+                            <td><span class="char">げ</span><span class="romaji">ge</span></td>
+                            <td><span class="char">ご</span><span class="romaji">go</span></td>
                         </tr>
                         <tr>
-                            <td>だ<br>da</td>
-                            <td>ぢ<br>ji</td>
-                            <td>づ<br>zu</td>
-                            <td>で<br>de</td>
-                            <td>ど<br>do</td>
+                            <td><span class="char">ざ</span><span class="romaji">za</span></td>
+                            <td><span class="char">じ</span><span class="romaji">ji</span></td>
+                            <td><span class="char">ず</span><span class="romaji">zu</span></td>
+                            <td><span class="char">ぜ</span><span class="romaji">ze</span></td>
+                            <td><span class="char">ぞ</span><span class="romaji">zo</span></td>
                         </tr>
                         <tr>
-                            <td>ば<br>ba</td>
-                            <td>び<br>bi</td>
-                            <td>ぶ<br>bu</td>
-                            <td>べ<br>be</td>
-                            <td>ぼ<br>bo</td>
+                            <td><span class="char">だ</span><span class="romaji">da</span></td>
+                            <td><span class="char">ぢ</span><span class="romaji">ji</span></td>
+                            <td><span class="char">づ</span><span class="romaji">zu</span></td>
+                            <td><span class="char">で</span><span class="romaji">de</span></td>
+                            <td><span class="char">ど</span><span class="romaji">do</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="char">ば</span><span class="romaji">ba</span></td>
+                            <td><span class="char">び</span><span class="romaji">bi</span></td>
+                            <td><span class="char">ぶ</span><span class="romaji">bu</span></td>
+                            <td><span class="char">べ</span><span class="romaji">be</span></td>
+                            <td><span class="char">ぼ</span><span class="romaji">bo</span></td>
                         </tr>
                     </table>
-                </div><!--table 1 div end-->
-            </div> <!--Full table div end-->
+                </div><!--table 2 div end-->
+            </div><!--Full table div end-->
             <div id="suggetion">
                 <div id="how-learn">
                     <h3 class="list1-title">How to learn.</h3>
