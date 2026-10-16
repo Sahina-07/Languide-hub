@@ -1,3 +1,6 @@
+body{
+    margin: 0%;
+}
 /* Logo */
 .brand-container{
     display: inline-flex;
@@ -213,6 +216,7 @@ p {
     text-decoration: none;
 }
 #header nav a:hover{
+    text-decoration: dashed;
     color: #F472B6;
 }
 #header p {
@@ -228,41 +232,98 @@ p {
 
  #Hiragana-table{
     display: flex;
-    justify-content: space-evenly;
-    margin: 50px
+    margin: 25px;
+    justify-content: center;
+    gap: 30px;
+ }
+ #table-1{
+    margin-top: 48px;
  }
 
+/* ===========Table================= */
 .hiragana-char{
-    padding: 5px;
-    
+  border: solid #F9A8D4; 
+  border-radius: 10px;
+  border-spacing: 10px; /* Separates the cards */
+  width: 100%;
+  max-width: 600px;
+  font-family: sans-serif;
+}
+/* Header style styling */
+ .hiragana-char th{
+    font-size: 22px;
+    color: #0b1a30;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+ }
+/* Rounded card style for individual cells */
+.hiragana-char td{
+    background-color: #fffafc;
+    border: 1px solid #ffd5e0;
+    border-radius: 8px;
+    padding: 5px 45px ;
+    text-align: center;
+    width: 20%;
+}
+/* Japanese Character layout */
+.hiragana-char .char{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0b1a30;
+    margin-bottom: 2px;
+}
+/* English */
+.hiragana-char .romanji{
+    display: block;
+    font-size: 22px;
+    color: #758294;
+}
+.empty-cell{
+    height: 55px;
 }
 
 
 
-/* ==================================FOOTER========================================= */
 
+/* ==================================FOOTER========================================= */
+#main-footer{
+    background-color: #FCE7F3;
+    margin-top: 30px;
+}
 #footer{
     display: flex;
     justify-content: space-evenly;
 
 }
 
-#quick-links{
+
+#quick-links {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+#quick-links a{
+    text-decoration: none;
+}
+#quick-links a:hover{
+    color: #d81b60;
 }
 #copy-right{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
+.foot-line {
+  border: none;
+  height: 3px;
+  background-color: #F9A8D4; 
+  margin: 30px 0;
+}
+
 /* ============================Suggetion=================================== */
-#suggetion{
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-}
 .list-title{
     font-family: sans-serif;
     color: #0b1a30;
@@ -278,8 +339,9 @@ p {
 /* Checkmark */
 .learning-list li{
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
 }
 /* pink circle */
 .checkmark{
@@ -315,7 +377,7 @@ p {
     padding: 10px;
     border-radius: 10px;
     background-color: #FCE7F3;
-    
+    height: 250px;
 }
 
 /* ==========================How to Learn====================== */
@@ -327,6 +389,8 @@ p {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .list1-title{
     font-family: sans-serif;
@@ -345,7 +409,7 @@ p {
     margin: 15px 0;
     width: 100%;
 }
-
+/* Button */
 #hiraprect-btn{
     border: 0;
     background-color: #EC4899;
@@ -372,44 +436,4 @@ p {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-}
-/* ===========Table================= */
-.hiragana-char{
-  border: solid #F9A8D4; 
-  border-radius: 10px;
-  border-spacing: 10px; /* Separates the cards */
-  width: 100%;
-  max-width: 600px;
-  font-family: sans-serif;
-}
-/* Header style styling */
- .hiragana-char th{
-    font-size: 22px;
-    color: #0b1a30;
-    text-align: left;
-    padding-left: 10px;
-    padding-bottom: 10px;
- }
-/* Rounded card style for individual cells */
-.hiragana-char td{
-    background-color: #fffafc;
-    border: 1px solid #ffd5e0;
-    border-radius: 8px;
-    padding: 15px 5px;
-    text-align: center;
-    width: 20%;
-}
-/* Japanese Character layout */
-.hiragana-char .char{
-    display: block;
-    font-size: 22px;
-    font-weight: bold;
-    color: #0b1a30;
-    margin-bottom: 2px;
-}
-/* English */
-.hiragana-char .romanji{
-    display: block;
-    font-size: 22px;
-    color: #758294;
 }
